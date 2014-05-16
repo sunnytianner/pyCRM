@@ -83,7 +83,7 @@ def ExportAnnotations(pw,pt,pd,idf,linenum,content_predict,K,alpha,beta,gamma):
     export_annotations=[]
     num=1
     for content in content_predict:
-        print "Predicting the number " + str(num) + " feature request' annotations..."
+        #print "Predicting the number " + str(num) + " feature request' annotations..."
         num += 1
         words = content.strip().split(" ")
         simi_linenum = GetKnn(words,idf,pd,linenum,gamma)
